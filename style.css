@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Caesar+Dressing|Roboto+Mono');
+
+
+body {
+	--table-size: clamp(75px, 100px, 130px);
+	font-family: 'Caesar Dressing', system-ui;
+	text-align: center;
+	font-size: clamp(2rem, 3rem, 4rem);
+	background: rgb(49, 52, 69);
+}
+
+h1, h2, h3 {
+	color: rgb(255, 153, 0);
+}
+
+table {
+	width: 100%;
+	cursor: pointer!important;
+}
+
+th:not([class="head"]) {
+	transition: all 0.5s ease-out;
+}
+th:not([class="head"]):hover {
+	color: #ffc166;
+}
+
+.head {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	background: rgba(255, 153, 0, 0.3);
+}
+
+#typest {
+	width: 100%;
+	overflow-wrap: break-word;
+	white-space: pre-wrap;
+	font-family: 'Caesar Dressing', system-ui;
+	word-wrap: break-word;
+	gap: 0.5em;
+	display: flex;
+}
+
+#text {
+	opacity: 0;
+}
+
+.inputWrapper input, button {
+	font-size:2rem;
+	background:rgb(49, 52, 69);
+	border: none;
+	padding: 1rem;
+	width: 13em;
+	border-radius: 1rem;
+	color: rgb(255, 153, 0);
+	cursor: pointer;
+	font-family:'Caesar Dressing', system-ui;
+	box-shadow: 8px 5px 17px 11px rgba(0,0,0,0.51);
+
+}
+input{appearance:none;}
+
+.input-wrapper input:focus {
+  -webkit-outline: 2px solid lightcoral;
+}
+
+
+.fade-in {
+	animation: fadeIn 1s ease-out;
+	opacity: 1;
+	color: #ffc166;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+		color: #ffc166;
+	}
+}
+
+
